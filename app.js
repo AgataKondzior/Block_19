@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.fruit').on('click','img',function(){
+     $('.fruit').on('mouseenter','img',function(){
         $(this).closest('.fruit').find('h3').slideToggle();  
     });  
     $('#kilo').on('change',function(){
