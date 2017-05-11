@@ -5,7 +5,7 @@ $(document).ready(function(){
     $('.weight').on('change',function(){
         var price = +$(this).closest('.fruit').data('price');
         var quantity = +$(this).val();   
-        $('.total').text(price * quantity);
+        $(this).closest('.total').text(price * quantity);
     });
 });
       
