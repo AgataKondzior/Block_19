@@ -4,8 +4,9 @@ $(document).ready(function () {
     });  
     $('.weight').on('change', function () {
         var price = +$(this).closest('.fruit').data('price');
-        var quantity = +$(this).val();   
-        $(this).closest('.total').text(price * quantity);
+        var quantity = +$(this).val(); 
+       
+        $(this).closest('.fruit').querySelector('.total').text(price * quantity);
         
     });
 });
