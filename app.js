@@ -6,7 +6,7 @@ $(document).ready(function () {
         var price = +$(this).closest('.fruit').data('price');
         var quantity = +$(this).val();
         var total = price * quantity;
-    $(this).closest('.fruit').find('span').text('total');
+    $(this).closest('.fruit').find('span').text(total);
      
      
     });
